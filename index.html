@@ -11,28 +11,74 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-light bg-light">
+        <nav class="navbar navbar-dark bg-dark px-4">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Logo</a>
+              <a class="navbar-brand" href="#"><img class="logo" src="./images/logo.jpg" alt=""></a>
             </div>
           </nav>
 
-          <h2 class="header-txt">Select Area</h2>
+          <div class="dropdown">
+            <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Select Area
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
     </header>
 
+<main>
+    <h3 class="main-txt">Hyderabad</h3>
     <div class="property-container">
         <div class="property">
-            <div class="property-img">
-                <img src="" />
+            <div class="img-container">
+                <img class="property-img" src="./images/property1.jpg" />
             </div>
-            <div class="property-txt">
-
+            <div class="txt-container">
+                <h5>Property Type:</h5>
+                <h6>Price:</h6>
             </div>
         </div>
-
-
-
+        <div class="property">
+            <div class="img-container">
+                <img class="property-img" src="./images/property1.jpg" />
+            </div>
+            <div class="txt-container">
+                <h5>Property Type:</h5>
+                <h6>Price:</h6>
+            </div>
+        </div>
+        <div class="property">
+            <div class="img-container">
+                <img class="property-img" src="./images/property1.jpg" />
+            </div>
+            <div class="txt-container">
+                <h5>Property Type:</h5>
+                <h6>Price:</h6>
+            </div>
+        </div>
     </div>
+</main>
 
+
+<div id="popup">
+    <button id="close">X</button>
+    <h2>Select City</h2>
+    <div class="dropdown">
+        <button class="btn btn-lg btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+          Select Area
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+</div>
+
+
+<script src="./script.js"></script>
 </body>
 </html>

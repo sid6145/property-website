@@ -1,8 +1,73 @@
+.logo{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
 .header-txt{
     padding: 10px;
     text-align: center;
 }
 
-.property-container{
-    padding: 100px 50px;
+.dropdown{
+    padding: 10px;
+    text-align: center;
 }
+
+main{
+    padding: 80px 20px;
+}
+
+.main-txt{
+    margin-left: 60px;
+}
+
+.property-container{
+    padding: 20px 20px;
+    display: flex;
+}
+
+.property{
+    width: 600px;
+    height: 250px;
+    border: 1px solid black;
+    display: flex;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+.img-container{
+    padding: 20px 20px;
+}
+
+.property-img{
+    width: 200px;
+    height: 200px;
+}
+
+.txt-container{
+    padding: 20px 10px;
+}
+
+#popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 300px;
+    padding: 50px 50px;
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px black;
+}
+
+#close{
+    width: 10%;
+    margin-left: 450px;
+    
+}
+
