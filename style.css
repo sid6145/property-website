@@ -4,6 +4,10 @@
     border-radius: 50%;
 }
 
+.navbar{
+    box-shadow: 2px 2px 10px black;
+}
+
 .header-txt{
     padding: 10px;
     text-align: center;
@@ -29,15 +33,21 @@ main{
     
 }
 
-.property{
-    width: 500px;
-    height: 250px;
-    border: 1px solid black;
-    display: flex;
-    border-radius: 8px;
-    margin: 10px;
-    padding: 0 40px;
-}
+    .property{
+        width: 500px;
+        height: 250px;
+        display: flex;
+        border-radius: 8px;
+        margin: 10px;
+        padding: 0 40px;
+        background-color: rgba(226, 225, 225, 0.5);
+        transition: 0.3s ease;
+    }
+
+    .property:hover{
+        box-shadow: 5px 5px 10px black;
+        cursor: pointer;
+    }
 
 .img-container{
     padding: 20px 10px;
@@ -53,6 +63,17 @@ main{
     padding: 20px 0;
 }
 
+::-webkit-scrollbar{
+    height: 10px;
+    width: 5px;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(179, 179, 179);
+}
+::-webkit-scrollbar-thumb:horizontal{
+    background: rgb(206, 204, 204);
+    border-radius: 10px;
+}
+
 
 
 #popup{
@@ -65,19 +86,33 @@ main{
     flex-direction: column;
     width: 600px;
     height: 300px;
-    padding: 50px 50px;
+    padding: 20px 50px;
     background-color: white;
     border: 1px solid black;
     box-shadow: 5px 5px 10px black;
 }
 
 #close{
-    width: 10%;
+    width: 35px;
+    height: 35px;
     margin-left: 450px;
-    
+    border: 1px solid rgb(240, 81, 81);
+    padding:4px 0;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(240, 81, 81);
+    color: white;
+    font-weight: 600;
+}
+
+#close:hover{
+    background-color: white;
+    color: rgb(240, 81, 81) ;
+    border: 1px solid rgb(240, 81, 81);
 }
 
 .dropdown-btn{
+    margin-top: 20px;
     padding: 10px 80px;
     background-color: transparent;
     border: 1px solid black;
@@ -88,3 +123,37 @@ main{
     height: auto;
 }
 
+
+@media screen and (max-width: 600px) {
+    .property-container{
+        padding: 30px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+
+
+.property{
+    width: 450px;
+    height: 200px;
+    display: flex;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 0 40px;
+    background-color: rgba(226, 225, 225, 0.5);
+    transition: 0.3s ease;
+}
+
+.property:hover{
+    box-shadow: 5px 5px 10px black;
+    cursor: pointer;
+}
+
+.property-img{
+    width: 150px;
+    height: 150px;
+}
+
+
+}
