@@ -51,7 +51,7 @@ main {
 .img-container {
   border: 1px solid green;
   padding: 20px 5px;
-  margin: 0 9px;
+  margin-right:9px;
 }
 
 .property-img {
@@ -61,7 +61,7 @@ main {
 }
 
 .txt-container {
-  width: 100px;
+  width: 200px;
   padding: 20px 5px;
   border: 1px solid red;
   padding: 10px 5px;
@@ -155,7 +155,7 @@ footer{
 
 @media screen and (max-width: 600px) {
   .property-container {
-    padding: 30px 10px;
+    padding: 30px 20px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -166,7 +166,7 @@ footer{
     display: flex;
     border-radius: 8px;
     margin: 10px;
-    padding: 0 40px;
+    padding: 0 0;
     background-color: rgba(226, 225, 225, 0.5);
     transition: 0.3s ease;
   }
@@ -180,4 +180,18 @@ footer{
     width: 150px;
     height: 150px;
   }
+
+  .img-container {
+    width: 300px;
+    border: 1px solid green;
+    padding: 20px 15px;
+    margin-right: 9px;
+  }
+
+  .txt-container {
+    width: 300px;
+    border: 1px solid red;
+    padding: 20px 5px;
+  }
+  
 }
