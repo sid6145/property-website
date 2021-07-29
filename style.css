@@ -1,140 +1,148 @@
-.logo{
-    width: 55px;
-    height: 55px;
-    border-radius: 50%;
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
 }
 
-.navbar{
-    box-shadow: 2px 2px 10px black;
+.navbar {
+
+  background-color: rgb(73, 72, 72);
 }
 
-.header-txt{
-    padding: 10px;
-    text-align: center;
+.header-txt {
+  padding: 10px;
+  text-align: center;
 }
 
-.dropdown{
-    padding: 10px;
-    text-align: center;
+.dropdown {
+  padding: 10px;
+  text-align: center;
 }
 
-main{
-    padding: 80px 10px;
+main {
+  padding: 80px 10px;
 }
 
-.main-txt{
-    margin-left: 60px;
+.main-txt {
+  margin-left: 60px;
 }
 
-.property-container{
-    padding: 30px 20px;
-    display: flex;
-    overflow: auto;
-    
+.property-container {
+  padding: 30px 20px;
+  display: flex;
 }
 
-    .property{
-        width: 500px;
-        height: 250px;
-        display: flex;
-        border-radius: 8px;
-        margin: 10px;
-        padding: 0 40px;
-        background-color: rgba(226, 225, 225, 0.5);
-        transition: 0.3s ease;
-    }
-
-    .property:hover{
-        box-shadow: 5px 5px 10px black;
-        cursor: pointer;
-    }
-
-.img-container{
-    padding: 20px 10px;
+.property {
+  width: 240px;
+  height: 150px;
+  display: flex;
+  border-radius: 8px;
+  padding: 5px 0;
+  margin: 10px;
+  background-color: rgba(226, 225, 225, 0.5);
+  transition: 0.3s ease;
 }
 
-.property-img{
-    width: 250px;
-    height: 200px;
+.property:hover {
+  box-shadow: 5px 5px 10px black;
+  cursor: pointer;
 }
 
-.txt-container{
-    width: 100px;
-    padding: 20px 0;
+.img-container {
+  border: 1px solid green;
+  padding: 20px 5px;
+  margin: 0 9px;
 }
 
-::-webkit-scrollbar{
-    height: 10px;
-    width: 5px;
-    background: rgb(255, 255, 255);
-    border: 1px solid rgb(179, 179, 179);
-}
-::-webkit-scrollbar-thumb:horizontal{
-    background: rgb(206, 204, 204);
-    border-radius: 10px;
+.property-img {
+  width: 100px;
+  height: 100px;
+
 }
 
-
-
-#popup{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 600px;
-    height: 300px;
-    padding: 20px 50px;
-    background-color: white;
-    border: 1px solid black;
-    box-shadow: 5px 5px 10px black;
+.txt-container {
+  width: 100px;
+  padding: 20px 5px;
+  border: 1px solid red;
+  padding: 10px 5px;
 }
 
-#close{
-    width: 35px;
-    height: 35px;
-    margin-left: 450px;
-    border: 1px solid rgb(240, 81, 81);
-    padding:4px 0;
-    border: none;
-    border-radius: 50%;
-    background-color: rgb(240, 81, 81);
-    color: white;
-    font-weight: 600;
+.txt-container h6 {
+  font-size: 12px;
 }
 
-#close:hover{
-    background-color: white;
-    color: rgb(240, 81, 81) ;
-    border: 1px solid rgb(240, 81, 81);
+::-webkit-scrollbar {
+  height: 10px;
+  width: 5px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(179, 179, 179);
+}
+::-webkit-scrollbar-thumb:horizontal {
+  background: rgb(206, 204, 204);
+  border-radius: 10px;
 }
 
-.dropdown-btn{
+#popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 300px;
+  padding: 20px 50px;
+  background-color: white;
+  border: 1px solid black;
+  box-shadow: 3px 3px 10px black;
+  border-radius: 10px;
+}
+
+#popup .dropdown{
     margin-top: 20px;
-    padding: 10px 80px;
     background-color: transparent;
-    border: 1px solid black;
 }
 
-.dropdown-menu{
-    width: 255px;
-    height: auto;
+#close {
+  width: 35px;
+  height: 35px;
+  margin-left: 450px;
+  border: 1px solid rgb(240, 81, 81);
+  padding: 4px 0;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(240, 81, 81);
+  color: white;
+  font-weight: 600;
 }
 
+#close:hover {
+  background-color: white;
+  color: rgb(240, 81, 81);
+  border: 1px solid rgb(240, 81, 81);
+}
+
+.dropdown-btn {
+  margin-top: 20px;
+  padding: 10px 80px;
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.dropdown-menu {
+  width: 255px;
+  height: auto;
+}
 
 @media screen and (max-width: 600px) {
-    .property-container{
-        padding: 30px 10px;
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
+  .property-container {
+    padding: 30px 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-
-
-.property{
+  .property {
     width: 450px;
     height: 200px;
     display: flex;
@@ -143,17 +151,15 @@ main{
     padding: 0 40px;
     background-color: rgba(226, 225, 225, 0.5);
     transition: 0.3s ease;
-}
+  }
 
-.property:hover{
+  .property:hover {
     box-shadow: 5px 5px 10px black;
     cursor: pointer;
-}
+  }
 
-.property-img{
+  .property-img {
     width: 150px;
     height: 150px;
-}
-
-
+  }
 }
