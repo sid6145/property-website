@@ -49,7 +49,6 @@ main {
 }
 
 .img-container {
-  border: 1px solid green;
   padding: 20px 5px;
   margin-right:9px;
 }
@@ -63,8 +62,6 @@ main {
 .txt-container {
   width: 200px;
   padding: 20px 5px;
-  border: 1px solid red;
-  padding: 10px 5px;
 }
 
 .txt-container h6 {
@@ -182,15 +179,13 @@ footer{
   }
 
   .img-container {
-    width: 300px;
-    border: 1px solid green;
+    width: 200px;
     padding: 20px 15px;
     margin-right: 9px;
   }
 
   .txt-container {
-    width: 300px;
-    border: 1px solid red;
+    width: 100px;
     padding: 20px 5px;
   }
   
